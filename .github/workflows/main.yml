@@ -35,10 +35,9 @@ jobs:
 
 
      - name: Check out Git repository
-
-
-       uses: actions/checkout@main
-
+       uses: actions/checkout@v4
+       with: 
+         fetch-depth: 0
 
      - name: Run GitHub Super Linter
 
